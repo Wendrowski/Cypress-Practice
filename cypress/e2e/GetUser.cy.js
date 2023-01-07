@@ -30,7 +30,6 @@ describe('get api user test', () => {
             expect(res.body.meta.pagination.pages).to.eq(388)
             expect(res.body.meta.pagination.page).to.eq(1)
             expect(res.body.meta.pagination.limit).to.eq(10)
-
             expect(res.body.meta.pagination.links).has.property('previous', null)
         })
     })
