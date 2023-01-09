@@ -13,7 +13,6 @@ describe ('post user test', () => {
             randomText += pattern.charAt(Math.floor(Math.random() * pattern.length))
             testEmail = randomText + '@gmail.com'
         }
-
         cy.fixture('createuser').then((payload) => { // could be used instead of initializing const dataJson
         // the first call (POST)   
         cy.request({

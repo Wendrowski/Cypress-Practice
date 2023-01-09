@@ -18,7 +18,7 @@ describe('get api user test', () => {
             expect(res.body.status).to.eq('active')
         })
     })
-    it.only('get users by id', () => {
+    it('get users by id', () => {
         cy.request({
             method : 'GET',
             url : 'https://gorest.co.in/public/v1/users',
